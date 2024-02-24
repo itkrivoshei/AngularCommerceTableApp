@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
   apiUrl:
-    'https://cors-anywhere.herokuapp.com/https://random-data-api.com/api/commerce/random_commerce?size=100',
+    'https://hdm2f1y062.execute-api.eu-north-1.amazonaws.com/default/CommerceAPIProxy',
 };
