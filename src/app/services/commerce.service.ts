@@ -6,11 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CommerceService {
+  private apiUrl = '/api/commerce/random_commerce?size=100';
+
   constructor(private http: HttpClient) {}
 
-  getRandomCommerces(): Observable<any> {
-    return this.http.get(
-      'https://random-data-api.com/api/commerce/random_commerce?size=100'
-    );
+  getCommerces(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl);
   }
 }
