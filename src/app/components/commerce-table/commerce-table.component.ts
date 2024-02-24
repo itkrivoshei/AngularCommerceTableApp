@@ -12,6 +12,7 @@ import { State } from '../../store/reducers/commerce.reducer';
 export class CommerceTableComponent implements OnInit {
   commerces$: Observable<any[]>;
   displayedColumns: string[] = [
+    'index',
     'product_name',
     'material',
     'department',
@@ -23,6 +24,10 @@ export class CommerceTableComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.store.dispatch(loadCommerces());
+  }
+
+  loadMore(): void {
     this.store.dispatch(loadCommerces());
   }
 }
