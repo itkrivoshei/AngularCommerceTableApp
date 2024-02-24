@@ -1,11 +1,11 @@
 <div class="table-header">
-  <h1>100 Random Commerces ❤️</h1>
+  <h1>100 random commerces ❤️</h1>
 </div>
 <div class="mat-elevation-z8">
   <table mat-table [dataSource]="commerces$" class="mat-elevation-z8">
     <ng-container matColumnDef="index">
       <th mat-header-cell *matHeaderCellDef>No.</th>
-      <td mat-cell *matCellDef="let element">{{ element.index }}</td>
+      <td mat-cell *matCellDef="let element; let i = index">{{ i + 1 }}</td>
     </ng-container>
 
     <ng-container matColumnDef="product_name">
@@ -31,4 +31,9 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
   </table>
+</div>
+<div class="load-more-container">
+  <button mat-raised-button color="warn" (click)="loadMore()">
+    Load More Commerces
+  </button>
 </div>
