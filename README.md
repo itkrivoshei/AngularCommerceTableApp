@@ -1,27 +1,78 @@
-# AngularCommerceTableApp
+# 🛒 AngularCommerceTableApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+A streamlined Angular project showcasing a dynamic data table of commerce entries fetched from [random-data-api.com](https://random-data-api.com/), enhanced with Angular Material and state management via NgRx.
 
-## Development server
+## 🚀 Quick Start
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Clone the project:
 
-## Code scaffolding
+```sh
+git clone https://github.com/itkrivoshei/AngularCommerceTableApp.git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Change directory:
 
-## Build
+```sh
+cd AngularCommerceTableApp
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install dependencies:
 
-## Running unit tests
+```sh
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Serve the project locally:
 
-## Running end-to-end tests
+```sh
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Navigate to `http://localhost:4200/` to view the app.
 
-## Further help
+## 🏭 Build and Deploy
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Build the project:
+
+```sh
+ng build --configuration production --base-href "https://itkrivoshei.github.io/AngularCommerceTableApp/"
+```
+
+Deploy to GitHub Pages:
+
+```sh
+ngh --dir=dist/AngularCommerceTableApp
+```
+
+## 🧪 Unit Tests
+
+Run unit tests with the following command:
+
+```sh
+ng test
+```
+
+Tests are detailed for:
+
+- [Commerce Table Component](src/app/components/commerce-table/commerce-table.component.spec.ts)
+- [App Component](src/app/app.component.spec.ts)
+- [Commerce Service](src/app/services/commerce.service.spec.ts)
+
+## ⚙️ Environment Configuration
+
+Configured for development and production environments:
+
+- [Development](src/environments/environment.ts)
+- [Production](src/environments/environment.prod.ts)
+
+## 🎨 Features
+
+- Fetches and displays over 100 commerce entries.
+- Utilizes Angular Material for UI components.
+- Incorporates NgRx for state management.
+- "Load More Commerces" button to fetch additional entries.
+- Custom styling for a unique user experience.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
