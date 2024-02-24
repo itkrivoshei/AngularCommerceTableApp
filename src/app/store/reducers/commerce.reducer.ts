@@ -17,7 +17,7 @@ export const reducer = createReducer(
   initialState,
   on(CommerceActions.loadCommercesSuccess, (state, action) => ({
     ...state,
-    commerces: action.commerces,
+    commerces: [...state.commerces, ...action.commerces],
   })),
   on(CommerceActions.loadCommercesFailure, (state, action) => ({
     ...state,
