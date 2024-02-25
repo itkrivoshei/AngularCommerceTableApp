@@ -4,6 +4,7 @@ $background-color: #fbe9e9;
 $header-bg-color: #fa7a7a;
 $row-hover-color: #f6c7c7;
 $border-color: #e2d5d5;
+$background-color-second: #f8e5e5;
 $text-color: #5f5959;
 $header-text-color: #4c4444;
 $font-family: "Roboto", sans-serif;
@@ -50,6 +51,11 @@ button.mat-raised-button {
     border-collapse: separate;
     border-spacing: 0;
     transition: all 0.3s ease;
+    tr {
+      &:nth-child(even) {
+        background-color: $background-color-second;
+      }
+    }
     th,
     td {
       padding: 16px 24px;
