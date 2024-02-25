@@ -1,6 +1,10 @@
 # 🛒 AngularCommerceTableApp
 
-A streamlined Angular project showcasing a dynamic data table of commerce entries fetched from [random-data-api.com](https://random-data-api.com/), enhanced with Angular Material and state management via NgRx.
+A streamlined Angular project showcasing a dynamic data table of commerce entries. Initially fetching data from [random-data-api.com](https://random-data-api.com/), this app now integrates a serverless backend with AWS Lambda and API Gateway, enhanced with Angular Material and state management via NgRx.
+
+## 🔗 Live Demo
+
+Check out the live demo [here](https://itkrivoshei.github.io/AngularCommerceTableApp/).
 
 ## 🚀 Quick Start
 
@@ -29,6 +33,10 @@ ng serve
 ```
 
 Navigate to `http://localhost:4200/` to view the app.
+
+## 🛠 AWS Configuration
+
+Configured AWS Lambda and API Gateway for backend services to bypass CORS issues and securely fetch data for the application.
 
 ## 🏭 Build and Deploy
 
@@ -60,14 +68,14 @@ Tests are detailed for:
 
 ## ⚙️ Environment Configuration
 
-Configured for development and production environments:
+Configured for development and production environments with respective AWS API Gateway endpoints:
 
 - [Development](src/environments/environment.ts)
 - [Production](src/environments/environment.prod.ts)
 
 ## 🎨 Features
 
-- Fetches and displays over 100 commerce entries.
+- Fetches and displays over 100 commerce entries from a serverless AWS backend.
 - Utilizes Angular Material for UI components.
 - Incorporates NgRx for state management.
 - "Load More Commerces" button to fetch additional entries.
